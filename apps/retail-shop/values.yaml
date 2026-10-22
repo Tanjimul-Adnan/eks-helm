@@ -1,0 +1,31 @@
+global:
+  imagePullPolicy: IfNotPresent
+services:
+  storefront:
+    enabled: true
+    image:
+      repository: REPLACE_WITH_AWS_ACCOUNT_ID.dkr.ecr.ap-southeast-1.amazonaws.com/retail-shop-dev/storefront
+      tag: "bootstrap"
+    port: 8080
+    replicas: 2
+  catalog:
+    enabled: true
+    image:
+      repository: REPLACE_WITH_AWS_ACCOUNT_ID.dkr.ecr.ap-southeast-1.amazonaws.com/retail-shop-dev/catalog
+      tag: "bootstrap"
+    port: 8000
+    replicas: 1
+  cart:
+    enabled: true
+    image:
+      repository: REPLACE_WITH_AWS_ACCOUNT_ID.dkr.ecr.ap-southeast-1.amazonaws.com/retail-shop-dev/cart
+      tag: "bootstrap"
+    port: 8000
+    replicas: 1
+  checkout:
+    enabled: true
+    image:
+      repository: REPLACE_WITH_AWS_ACCOUNT_ID.dkr.ecr.ap-southeast-1.amazonaws.com/retail-shop-dev/checkout
+      tag: "bootstrap"
+    port: 8000
+    replicas: 1

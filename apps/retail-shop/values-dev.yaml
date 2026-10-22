@@ -1,0 +1,14 @@
+# CI updates image tags in a PR.
+services:
+  storefront:
+    image:
+      tag: "bootstrap"
+  catalog:
+    image:
+      tag: "bootstrap"
+  cart:
+    image:
+      tag: "bootstrap"
+  checkout:
+    image:
+      tag: "bootstrap"

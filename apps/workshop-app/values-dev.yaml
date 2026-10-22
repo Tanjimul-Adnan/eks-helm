@@ -1,9 +1,0 @@
-replicaCount: 2
-image:
-  # CI updates this tag in a PR after publishing an image to ECR.
-  repository: REPLACE_WITH_ACCOUNT_ID.dkr.ecr.ap-southeast-1.amazonaws.com/workshop-dev/workshop-app
-  tag: "bootstrap"
-  pullPolicy: IfNotPresent
-service:
-  type: ClusterIP
-  port: 80
