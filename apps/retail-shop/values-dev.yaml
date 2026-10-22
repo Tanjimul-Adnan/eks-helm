@@ -2,13 +2,13 @@
 services:
   storefront:
     image:
-      tag: "bootstrap"
+      tag: "e533e205991c06ca1ad08fb3ca01ece162983280"
   catalog:
     image:
-      tag: "bootstrap"
+      tag: "e533e205991c06ca1ad08fb3ca01ece162983280"
   cart:
     image:
-      tag: "bootstrap"
+      tag: "e533e205991c06ca1ad08fb3ca01ece162983280"
   checkout:
     image:
-      tag: "bootstrap"
+      tag: "e533e205991c06ca1ad08fb3ca01ece162983280"
