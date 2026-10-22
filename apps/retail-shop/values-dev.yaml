@@ -2,13 +2,17 @@
 services:
   storefront:
     image:
-      tag: "bootstrap"
+      repository: tanjimuladnan/storefront
+      tag: "72a3fc8bb1c39345933c39236eb6c99413cbfcf2"
   catalog:
     image:
-      tag: "bootstrap"
+      repository: tanjimuladnan/catalog
+      tag: "72a3fc8bb1c39345933c39236eb6c99413cbfcf2"
   cart:
     image:
-      tag: "bootstrap"
+      repository: tanjimuladnan/cart
+      tag: "72a3fc8bb1c39345933c39236eb6c99413cbfcf2"
   checkout:
     image:
-      tag: "bootstrap"
+      repository: tanjimuladnan/checkout
+      tag: "72a3fc8bb1c39345933c39236eb6c99413cbfcf2"
