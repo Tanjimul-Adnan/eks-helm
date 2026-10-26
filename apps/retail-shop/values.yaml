@@ -1,45 +1,54 @@
-global:
-  imagePullPolicy: IfNotPresent
-services:
-  storefront:
-    enabled: true
-    image:
-      repository: docker.io/tanjimuladnan/storefront
-      tag: "bootstrap"
-    port: 8080
-    replicas: 2
-  catalog:
-    enabled: true
-    image:
-      repository: docker.io/tanjimuladnan/catalog
-      tag: "bootstrap"
-    port: 8000
-    replicas: 1
-  cart:
-    enabled: true
-    image:
-      repository: docker.io/tanjimuladnan/cart
-      tag: "bootstrap"
-    port: 8000
-    replicas: 1
-  checkout:
-    enabled: true
-    image:
-      repository: docker.io/tanjimuladnan/checkout
-      tag: "bootstrap"
-    port: 8000
-    replicas: 1
-  orders:
-    enabled: true
-    image:
-      repository: docker.io/tanjimuladnan/orders
-      tag: "bootstrap"
-    port: 8000
-    replicas: 1
-  api_service:
-    enabled: true
-    image:
-      repository: docker.io/tanjimuladnan/api_service
-      tag: "bootstrap"
-    port: 8000
-    replicas: 1
+cart:
+  fullnameOverride: carts
+
+catalog:
+  fullnameOverride: catalog
+  app:
+    persistence:
+      provider: mysql
+  mysql:
+    create: true
+    persistentVolume:
+      enabled: true
+
+checkout:
+  fullnameOverride: checkout
+  app:
+    persistence:
+      provider: redis
+    endpoints:
+      orders: http://orders:80
+  redis:
+    create: true
+
+orders:
+  fullnameOverride: orders
+  app:
+    persistence:
+      provider: postgres
+      secret:
+        create: true
+        name: orders-db-credentials
+    messaging:
+      provider: rabbitmq
+      rabbitmq:
+        secret:
+          create: true
+          name: orders-rabbitmq-credentials
+  postgresql:
+    create: true
+    persistentVolume:
+      enabled: true
+  rabbitmq:
+    create: true
+    persistentVolume:
+      enabled: true
+
+ui:
+  fullnameOverride: ui
+  app:
+    endpoints:
+      catalog: http://catalog:80
+      carts: http://carts:80
+      checkout: http://checkout:80
+      orders: http://orders:80
