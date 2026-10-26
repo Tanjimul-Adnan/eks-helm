@@ -13,7 +13,7 @@ spec:
       recurse: true
       include: "retail-shop-application.yaml"
   destination:
-    server: https://kubernetes.default.svc
+    server: https://argocd.xcheetah1.dpdns.org
     namespace: argocd
   syncPolicy:
     automated:
