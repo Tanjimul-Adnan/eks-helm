@@ -4,28 +4,42 @@ services:
   storefront:
     enabled: true
     image:
-      repository: REPLACE_WITH_AWS_ACCOUNT_ID.dkr.ecr.ap-southeast-1.amazonaws.com/retail-shop-dev/storefront
+      repository: docker.io/tanjimuladnan/storefront
       tag: "bootstrap"
     port: 8080
     replicas: 2
   catalog:
     enabled: true
     image:
-      repository: REPLACE_WITH_AWS_ACCOUNT_ID.dkr.ecr.ap-southeast-1.amazonaws.com/retail-shop-dev/catalog
+      repository: docker.io/tanjimuladnan/catalog
       tag: "bootstrap"
     port: 8000
     replicas: 1
   cart:
     enabled: true
     image:
-      repository: REPLACE_WITH_AWS_ACCOUNT_ID.dkr.ecr.ap-southeast-1.amazonaws.com/retail-shop-dev/cart
+      repository: docker.io/tanjimuladnan/cart
       tag: "bootstrap"
     port: 8000
     replicas: 1
   checkout:
     enabled: true
     image:
-      repository: REPLACE_WITH_AWS_ACCOUNT_ID.dkr.ecr.ap-southeast-1.amazonaws.com/retail-shop-dev/checkout
+      repository: docker.io/tanjimuladnan/checkout
+      tag: "bootstrap"
+    port: 8000
+    replicas: 1
+  orders:
+    enabled: true
+    image:
+      repository: docker.io/tanjimuladnan/orders
+      tag: "bootstrap"
+    port: 8000
+    replicas: 1
+  api_service:
+    enabled: true
+    image:
+      repository: docker.io/tanjimuladnan/api_service
       tag: "bootstrap"
     port: 8000
     replicas: 1

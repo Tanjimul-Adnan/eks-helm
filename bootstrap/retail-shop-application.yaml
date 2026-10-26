@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/REPLACE_WITH_ORG/retail-shop-helm.git
+    repoURL: https://github.com/Tanjimul-Adnan/eks-helm.git
     targetRevision: main
     path: apps/retail-shop
     helm:
@@ -14,7 +14,7 @@ spec:
         - values.yaml
         - values-dev.yaml
   destination:
-    server: https://kubernetes.default.svc
+    server: https://zrgocd.xcheetah1.dpdns.org
     namespace: retail-shop
   syncPolicy:
     automated:

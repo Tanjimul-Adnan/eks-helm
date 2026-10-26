@@ -12,3 +12,9 @@ services:
   checkout:
     image:
       tag: "9c7d0ad1e59a63bec09b8081e488ce06ffedaaf1"
+  orders:
+    image:
+      tag: "9c7d0ad1e59a63bec09b8081e488ce06ffedaaf1"
+  api_service:
+    image:
+      tag: "9c7d0ad1e59a63bec09b8081e488ce06ffedaaf1"
