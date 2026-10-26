@@ -14,7 +14,7 @@ spec:
         - values.yaml
         - values-dev.yaml
   destination:
-    server: https://zrgocd.xcheetah1.dpdns.org
+    server: https://argocd.xcheetah1.dpdns.org
     namespace: retail-shop
   syncPolicy:
     automated:
