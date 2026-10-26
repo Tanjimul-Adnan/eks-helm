@@ -2,19 +2,19 @@
 services:
   storefront:
     image:
-      tag: "9c7d0ad1e59a63bec09b8081e488ce06ffedaaf1"
+      tag: "48377a7e0b89d49745eaa34a1453eaa79cefae57"
   catalog:
     image:
-      tag: "9c7d0ad1e59a63bec09b8081e488ce06ffedaaf1"
+      tag: "48377a7e0b89d49745eaa34a1453eaa79cefae57"
   cart:
     image:
-      tag: "9c7d0ad1e59a63bec09b8081e488ce06ffedaaf1"
+      tag: "48377a7e0b89d49745eaa34a1453eaa79cefae57"
   checkout:
     image:
-      tag: "9c7d0ad1e59a63bec09b8081e488ce06ffedaaf1"
+      tag: "48377a7e0b89d49745eaa34a1453eaa79cefae57"
   orders:
     image:
-      tag: "9c7d0ad1e59a63bec09b8081e488ce06ffedaaf1"
+      tag: "48377a7e0b89d49745eaa34a1453eaa79cefae57"
   api_service:
     image:
-      tag: "9c7d0ad1e59a63bec09b8081e488ce06ffedaaf1"
+      tag: "48377a7e0b89d49745eaa34a1453eaa79cefae57"
