@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/REPLACE_WITH_ORG/retail-shop-helm.git
+    repoURL: https://github.com/Tanjimul-Adnan/eks-helm.git
     targetRevision: main
     path: bootstrap
     directory:
