@@ -2,13 +2,13 @@
 services:
   storefront:
     image:
-      tag: "9d1ee1bca2d41b5073cf23824b5e19fe454c5fb2"
+      tag: "0c5265dc89cfb58ee1b725a197743f8d0d5c32e1"
   catalog:
     image:
-      tag: "9d1ee1bca2d41b5073cf23824b5e19fe454c5fb2"
+      tag: "0c5265dc89cfb58ee1b725a197743f8d0d5c32e1"
   cart:
     image:
-      tag: "9d1ee1bca2d41b5073cf23824b5e19fe454c5fb2"
+      tag: "0c5265dc89cfb58ee1b725a197743f8d0d5c32e1"
   checkout:
     image:
-      tag: "9d1ee1bca2d41b5073cf23824b5e19fe454c5fb2"
+      tag: "0c5265dc89cfb58ee1b725a197743f8d0d5c32e1"
