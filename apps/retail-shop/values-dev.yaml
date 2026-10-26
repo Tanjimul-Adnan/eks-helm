@@ -2,20 +2,20 @@
 ui:
   image:
     repository: tanjimuladnan/storefront
-    tag: 823d8125d0092d9557a21b61e8ab49f4caf7b33f
+    tag: 3f8f09d955410004ec2a641e67eec5407b51c5a5
 catalog:
   image:
     repository: tanjimuladnan/catalog
-    tag: 823d8125d0092d9557a21b61e8ab49f4caf7b33f
+    tag: 3f8f09d955410004ec2a641e67eec5407b51c5a5
 cart:
   image:
     repository: tanjimuladnan/cart
-    tag: 823d8125d0092d9557a21b61e8ab49f4caf7b33f
+    tag: 3f8f09d955410004ec2a641e67eec5407b51c5a5
 checkout:
   image:
     repository: tanjimuladnan/checkout
-    tag: 823d8125d0092d9557a21b61e8ab49f4caf7b33f
+    tag: 3f8f09d955410004ec2a641e67eec5407b51c5a5
 orders:
   image:
     repository: tanjimuladnan/orders
-    tag: 823d8125d0092d9557a21b61e8ab49f4caf7b33f
+    tag: 3f8f09d955410004ec2a641e67eec5407b51c5a5
