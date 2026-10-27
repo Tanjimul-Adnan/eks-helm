@@ -15,4 +15,4 @@ dependencies:
   repository: file://charts-src/ui
   version: 1.6.3
 digest: sha256:fa961ec82304c38ec265826178c612c61bb7328bbc2e1caf93e1b22a932c5372
-generated: "2026-10-26T07:33:28.936644602Z"
+generated: "2026-10-27T08:05:36.282236694Z"
