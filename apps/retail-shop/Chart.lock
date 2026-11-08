@@ -21,4 +21,4 @@ dependencies:
   repository: https://charts.jetstack.io
   version: v1.16.2
 digest: sha256:40ff210f924595f077409c2bea2d7d4b0c1f201ba85fdc667a1fcc1d748cd168
-generated: "2026-11-08T18:50:04.676456624Z"
+generated: "2026-11-08T19:07:32.473542368Z"

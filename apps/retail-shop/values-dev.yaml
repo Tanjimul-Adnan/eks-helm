@@ -2,29 +2,29 @@
 ui:
   image:
     repository: docker.io/tanjimuladnan/storefront
-    tag: 452f5262eeece249ff2eef7c8cf2a468133a925c
+    tag: d3d11cb925821a161cfdb7ee0b2c5f89be6502a1
     pullPolicy: IfNotPresent
   enabled: true
   host: retail-store.xcheetah1.dpdns.org
 catalog:
   image:
     repository: docker.io/tanjimuladnan/catalog
-    tag: 452f5262eeece249ff2eef7c8cf2a468133a925c
+    tag: d3d11cb925821a161cfdb7ee0b2c5f89be6502a1
     pullPolicy: IfNotPresent
 cart:
   image:
     repository: docker.io/tanjimuladnan/cart
-    tag: 452f5262eeece249ff2eef7c8cf2a468133a925c
+    tag: d3d11cb925821a161cfdb7ee0b2c5f89be6502a1
     pullPolicy: IfNotPresent
 checkout:
   image:
     repository: docker.io/tanjimuladnan/checkout
-    tag: 452f5262eeece249ff2eef7c8cf2a468133a925c
+    tag: d3d11cb925821a161cfdb7ee0b2c5f89be6502a1
     pullPolicy: IfNotPresent
 orders:
   image:
     repository: docker.io/tanjimuladnan/orders
-    tag: 452f5262eeece249ff2eef7c8cf2a468133a925c
+    tag: d3d11cb925821a161cfdb7ee0b2c5f89be6502a1
     pullPolicy: IfNotPresent
 ingress:
   enabled: true
