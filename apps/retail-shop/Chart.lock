@@ -14,5 +14,8 @@ dependencies:
 - name: retail-store-sample-ui-chart
   repository: file://charts-src/ui
   version: 1.6.3
-digest: sha256:fa961ec82304c38ec265826178c612c61bb7328bbc2e1caf93e1b22a932c5372
-generated: "2026-11-07T06:26:20.157234694Z"
+- name: ingress-nginx
+  repository: https://kubernetes.github.io/ingress-nginx
+  version: 4.10.0
+digest: sha256:203f0f833865130247749c7c515db13192d1dee4abb845f12cfe99997aa91666
+generated: "2026-11-08T18:23:18.584579506Z"
