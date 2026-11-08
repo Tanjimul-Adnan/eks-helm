@@ -2,34 +2,40 @@
 ui:
   image:
     repository: docker.io/tanjimuladnan/storefront
-    tag: 96e461b6aacc029f86fab3db3369d6e9351c51da
+    tag: 452f5262eeece249ff2eef7c8cf2a468133a925c
     pullPolicy: IfNotPresent
   enabled: true
   host: retail-store.xcheetah1.dpdns.org
 catalog:
   image:
     repository: docker.io/tanjimuladnan/catalog
-    tag: 96e461b6aacc029f86fab3db3369d6e9351c51da
+    tag: 452f5262eeece249ff2eef7c8cf2a468133a925c
     pullPolicy: IfNotPresent
 cart:
   image:
     repository: docker.io/tanjimuladnan/cart
-    tag: 96e461b6aacc029f86fab3db3369d6e9351c51da
+    tag: 452f5262eeece249ff2eef7c8cf2a468133a925c
     pullPolicy: IfNotPresent
 checkout:
   image:
     repository: docker.io/tanjimuladnan/checkout
-    tag: 96e461b6aacc029f86fab3db3369d6e9351c51da
+    tag: 452f5262eeece249ff2eef7c8cf2a468133a925c
     pullPolicy: IfNotPresent
 orders:
   image:
     repository: docker.io/tanjimuladnan/orders
-    tag: 96e461b6aacc029f86fab3db3369d6e9351c51da
+    tag: 452f5262eeece249ff2eef7c8cf2a468133a925c
     pullPolicy: IfNotPresent
 ingress:
   enabled: true
   host: retail-store.xcheetah1.dpdns.org
+  tls:
+    enabled: true
+    clusterIssuer: letsencrypt-prod
+    acmeServer: https://acme-v02.api.letsencrypt.org/directory
+    email: admin@xcheetah1.dpdns.org
 argocd:
+  enabled: true
   host: argocd.xcheetah1.dpdns.org
 ingress-nginx:
   controller:
